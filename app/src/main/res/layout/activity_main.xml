@@ -4,6 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribe tu nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnHello"
+        android:layout_marginBottom="15sp"
+        android:layout_marginHorizontal="40sp"
+        android:textColor="@color/purple_200"
+        android:contentDescription="Escribe tu nombre"
+        android:hint="Escribe tu nombre"
+        android:textColorHint="@color/purple_200"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:maxLength="20"
+        />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHello"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Pulsa aquí"
+        android:textAllCaps="true"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
