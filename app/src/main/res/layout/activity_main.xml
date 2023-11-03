@@ -22,9 +22,9 @@
         />
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnHello"
@@ -36,7 +36,7 @@
         android:textColorHint="@color/purple_200"
         android:textAlignment="center"
         android:maxLines="1"
-        android:maxLength="20"
+        android:maxLength="10"
         />
     
     <androidx.appcompat.widget.AppCompatButton
